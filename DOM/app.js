@@ -32,6 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
         paragraph.style.color = getRandomColor();
     })
 
+    //Objective 5.
+    const btnOb5 = document.createElement("button");
+    document.body.appendChild(btnOb5);
+    const btnTextOb5 = document.createTextNode("My name");
+    btnOb5.appendChild(btnTextOb5);
+    let divOb5 = document.createElement("div");
+    document.body.appendChild(divOb5);
+    btnOb5.addEventListener("click", function () {
+        let myName = document.createElement("span");
+        myName.innerText = "Lisa";
+        div.appendChild(myName);
+    })
+
     function getRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
