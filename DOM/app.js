@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 //Objective 1. 
 const btn = document.createElement("button");
 const btnText = document.createTextNode("Click me! Dom button");
@@ -8,7 +9,9 @@ btn.addEventListener("click", function () {
     alert("Nice message");
 })
 
-// let squareContainer = document.createElement("div");
-// squareContainer.className = "container";
-// document.body.appendChild(squareContainer);
-// squareContainer.appendChild(div);
+//Objective 2.
+let inputText = document.querySelector("#inputText");
+htmlBtn.addEventListener("click", function () {
+    alert(inputText.value);
+})
+})
