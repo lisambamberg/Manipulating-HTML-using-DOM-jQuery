@@ -45,6 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
         div.appendChild(myName);
     })
 
+    //Objective 6.
+    let arr = ["Frodo", "Sam", "Merry", "Pippen", "Aragorn", "Boromir", "Gimli", "Legolas", "Gandalf", "Tom Bombadil"];
+    let arrIndex = 0;
+    let friendsButton = document.getElementById("friendsButton");
+    let ul = document.querySelector("ul");
+
+    friendsButton.addEventListener("click", function () {
+        let liText = document.createElement("li");
+        liText.innerText = arr[arrIndex];
+        ul.appendChild(liText);
+        arrIndex++
+    });
+
     function getRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
