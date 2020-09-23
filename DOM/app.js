@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
         div.style.backgroundColor = "white";
     })
 
+    //Objective 4.
+    let paragraph = document.querySelector("p");
+    paragraph.addEventListener("click", function () {
+        paragraph.style.color = getRandomColor();
+    })
+
     function getRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
