@@ -52,10 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let ul = document.querySelector("ul");
 
     friendsButton.addEventListener("click", function () {
-        let liText = document.createElement("li");
-        liText.innerText = arr[arrIndex];
-        ul.appendChild(liText);
-        arrIndex++
+        if (arr[arrIndex]) {
+            let liText = document.createElement("li");
+            liText.innerText = arr[arrIndex];
+            ul.appendChild(liText);
+            arrIndex++
+        }
     });
 
     function getRandomColor() {
