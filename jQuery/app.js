@@ -14,13 +14,18 @@ $(function () {
     });
 
     //Objective 3.
-    $("div").css({ "height": '100px' }); 
+    $("div").css({ "height": '100px' });
     $("div").css("width", "100px");
     $("div").mouseover(function () {
         $("div").css("backgroundColor", getRandomColor());
     })
     $("div").mouseout(function () {
         $("div").css("backgroundColor", "white");
+    })
+
+    //Objective 4.
+    $("p").click(function () {
+        $("p").css("color", getRandomColor())
     })
 
     function getRandomColor() {
