@@ -1,8 +1,7 @@
 $(function () {
     //Objective 1. 
-    let btn = $("<button></button>");
+    let btn = $("<button>Click for a nice message</button>");
     $("body").append(btn);
-    btn.css("height", "30px").css("width", "30px");
     btn.click(function () {
         alert("Nice message!");
     })
@@ -28,6 +27,17 @@ $(function () {
         $("p").css("color", getRandomColor())
     })
 
+    //Objective 5.
+    let btnOb5 = $("<button>Click for my name</button>");
+    $("body").append(btnOb5);
+    let divOb5 = $("<div></div>");
+    $("body").append(divOb5);
+    let span = $("<span>Lisa</span>")
+
+    btnOb5.click(function () {
+        $("body").append(span)
+    })
+
     function getRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
@@ -37,4 +47,3 @@ $(function () {
         return color;
     }
 })
-
