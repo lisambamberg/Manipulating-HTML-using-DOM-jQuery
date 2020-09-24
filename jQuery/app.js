@@ -38,6 +38,18 @@ $(function () {
         $("body").append(span)
     })
 
+    //Objective 6. 
+    const friendArray = ["Frodo", "Sam", "Merry", "Pippin", "Aragorn", "Boromir", "Gimli", "Legolas", "Gandalf", "Tom Bombadil"];
+    let arrIndex = 0;
+
+    $("#friendButton").click(function () {
+        if (friendArray[arrIndex]) {
+            let li = $("<li></li>").text(friendArray[arrIndex])
+            $("ul").append(li);
+            arrIndex++
+        }
+    });
+
     function getRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
